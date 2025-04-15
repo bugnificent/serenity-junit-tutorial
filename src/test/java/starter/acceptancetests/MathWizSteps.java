@@ -5,7 +5,7 @@ import starter.Calculator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class MathWizSteps {
+class MathWizSteps {
 
     String actor;
 
