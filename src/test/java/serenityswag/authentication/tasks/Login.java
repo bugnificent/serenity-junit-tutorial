@@ -1,12 +1,10 @@
-package serenityswag.authentication.actions;
+package serenityswag.authentication.tasks;
 
-import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.UIInteractionSteps;
-import org.openqa.selenium.WebDriver;
-import serenityswag.authentication.User;
+import serenityswag.authentication.actors.User;
 
-public class LoginActions extends UIInteractionSteps {
+public class Login extends UIInteractionSteps {
 
 
     @Step("Login as {0}")

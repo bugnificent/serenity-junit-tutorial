@@ -1,6 +1,4 @@
-package serenityswag.authentication;
-
-import lombok.Data;
+package serenityswag.authentication.actors;
 
 
 public enum User {

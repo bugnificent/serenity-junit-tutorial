@@ -1,11 +1,11 @@
-package serenityswag.authentication.actions;
+package serenityswag.authentication.tasks;
 
 import net.serenitybdd.annotations.Step;
 import net.serenitybdd.core.steps.UIInteractionSteps;
 import org.openqa.selenium.By;
-import serenityswag.authentication.User;
+import serenityswag.authentication.actors.User;
 
-public class LogoutActions extends UIInteractionSteps {
+public class Logout extends UIInteractionSteps {
 
     @Step("Logout as {0}")
     public void as(User user){

@@ -1,4 +1,4 @@
-package serenityswag.authentication;
+package serenityswag.authentication.abilities;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.annotations.Steps;
@@ -8,13 +8,14 @@ import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
-import serenityswag.authentication.actions.LoginActions;
-import serenityswag.authentication.actions.LogoutActions;
-import serenityswag.authentication.homepage.Homepage;
-import serenityswag.inventory.InventoryPage;
+import serenityswag.authentication.tasks.Login;
+import serenityswag.authentication.tasks.Logout;
+import serenityswag.authentication.pages.HomePage;
+import serenityswag.authentication.pages.InventoryPage;
+import serenityswag.authentication.actors.User;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static serenityswag.authentication.User.STANDARD_USER;
+import static serenityswag.authentication.actors.User.STANDARD_USER;
 
 //Inject Serenity Library
 @ExtendWith(SerenityJUnit5Extension.class)
@@ -29,11 +30,11 @@ public class WhenLoggingOn {
 
     @Steps
 
-    LoginActions login;
-    LogoutActions logout;
+    Login login;
+    Logout logout;
 
     InventoryPage inventoryPage;
-    Homepage homepage;
+    HomePage homepage;
 
     @Test
     @Order(1)
